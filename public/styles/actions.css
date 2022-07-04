@@ -1,0 +1,19 @@
+#Actions{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.action-card{
+    width: 30rem;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.action-card .plan-informations,
+.action-card .agents-informations {
+    width: 50%;
+    height: 100%;
+}

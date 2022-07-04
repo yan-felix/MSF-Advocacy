@@ -1,0 +1,98 @@
+/*Global========================= */
+:root{
+    font-size: 62.5%; /* Os navegadores costumam ter por padrão font-size de 16px, com essa alteração => 1rem = 10px, o que nos permite trabalhar com rem, que é uma unidade de medida relativa, o que permite melhor uma adaptação da aplicação. */
+
+    --text-body-colour: #212529;
+    --gray: #6C757D;
+    --buttons-clour: #3F3F3F;
+    --h5-colour: #686868;
+    --red: #E20000;
+    --opacity-red: #FFDCDC;
+    --light-red: #C70000;
+    --numbers-colou:  #2499E3;
+    --actors-name-color: #1F1F1F;
+    --actores-credential: #737373;
+    --white: #FFFFFF;
+    --ap-actor: #D9FFE1;
+    --df-actor: #FFD9D9;
+    --classification-ap-text: #0C8218;
+    --classification-df-text: #E00000;
+    --trends-colou: #4E4E4E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: var(--white);
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.col-a{
+    grid-area: A;
+}
+
+.col-b{
+    grid-area: B;
+}
+
+.col-c{
+    grid-area: C;
+}
+
+.col-D{
+    grid-area: D;
+}
+
+.sr-only{  /* "sr-only" = screem reader only (somente leitores de tela)*. Esta class foi adicionada aos h2 para que pudéssimos manipular seus conteúdos utilizando o trick (truque) abaixo, a fim de torná-los invisíveis para o usuário, porém permitido sua leitura através das ferramentas de acessibilidade (screem readers) */ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.center{
+    width: 60%;
+    margin-inline: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/*Buttons===============================================================================================================================*/
+.button{
+    background: var(--buttons-clour);
+}
+
+.create-action-plan-button{
+    border-radius: 0.4rem;
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.5rem;
+}

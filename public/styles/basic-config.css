@@ -1,0 +1,32 @@
+:root{
+    font-size: 62.5%; /* Os navegadores costumam ter por padrão font-size de 16px, com essa alteração => 1rem = 10px, o que nos permite trabalhar com rem, que é uma unidade de medida relativa, o que permite melhor uma adaptação da aplicação. */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth; /* Esta propriedade [scroll-behavior] serve para mexer no comportamento da roalgem. Valor "smooth" tetermina que o html rolará suavemente. */
+}
+
+.sr-only{  /* "sr-only" = screem reader only (somente leitores de tela)*. Esta class foi adicionada aos h2 para que pudéssimos manipular seus conteúdos utilizando o trick (truque) abaixo, a fim de torná-los invisíveis para o usuário, porém permitido sua leitura através das ferramentas de acessibilidade (screem readers) */ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*Responsive=============================================================================================================================*/
+@media (min-width: 102.4rem) { /* Abaixo dessa medida de tela (102.4rem) dessa medida, ele vai começar a aplicar tudo que estiver dentro dessa função. */
+
+}
